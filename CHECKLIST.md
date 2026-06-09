@@ -4,7 +4,7 @@
 - [x] Wire up contact form to actually send submissions (Web3Forms)
 - [x] Compress large images (Images folder reduced from ~11MB to ~2.2MB total)
 - [ ] Confirm/update contact email (currently info@redhammergroup.com — placeholder?)
-- [ ] Add favicon from logo
+- [x] Add favicon from logo
 
 ## SEO
 - [ ] Add sitemap.xml
