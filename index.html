@@ -323,7 +323,10 @@
           </div>
         </div>
       </div>
-      <form class="contact-form" action="#" method="post" onsubmit="handleSubmit(event)">
+      <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+        <input type="hidden" name="access_key" value="5f3ead08-595c-49b3-9ab6-728fafcaedc6" />
+        <input type="hidden" name="subject" value="New Lead from Red Hammer Website" />
+        <input type="checkbox" name="botcheck" style="display:none" />
         <div class="form-row">
           <input type="text" name="first_name" placeholder="First Name" required />
           <input type="text" name="last_name" placeholder="Last Name" required />
@@ -346,6 +349,7 @@
         </select>
         <textarea name="message" placeholder="Tell us about your project..."></textarea>
         <button type="submit">Send My Request →</button>
+        <p id="formStatus" style="font-size: 14px; display: none;"></p>
       </form>
     </div>
   </section>
@@ -398,12 +402,42 @@
       });
     });
 
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
       e.preventDefault();
-      const btn = e.target.querySelector('button');
-      btn.textContent = 'Request Sent ✓';
-      btn.style.background = '#1a6b1a';
-      setTimeout(() => { btn.textContent = 'Send My Request →'; btn.style.background = ''; }, 4000);
+      const form = e.target;
+      const btn = form.querySelector('button');
+      const status = document.getElementById('formStatus');
+
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify(Object.fromEntries(new FormData(form)))
+        });
+        const result = await res.json();
+
+        if (result.success) {
+          btn.textContent = 'Request Sent ✓';
+          btn.style.background = '#1a6b1a';
+          status.style.display = 'none';
+          form.reset();
+        } else {
+          throw new Error(result.message || 'Submission failed');
+        }
+      } catch (err) {
+        btn.textContent = 'Send My Request →';
+        status.textContent = 'Something went wrong. Please call us instead at (325) 428-7085.';
+        status.style.display = 'block';
+        status.style.color = '#E52222';
+      } finally {
+        btn.disabled = false;
+        if (btn.textContent === 'Request Sent ✓') {
+          setTimeout(() => { btn.textContent = 'Send My Request →'; btn.style.background = ''; }, 4000);
+        }
+      }
     }
   </script>
 </body>
