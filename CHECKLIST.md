@@ -7,8 +7,8 @@
 - [x] Add favicon from logo
 
 ## SEO
-- [ ] Add sitemap.xml
-- [ ] Add robots.txt
+- [x] Add sitemap.xml
+- [x] Add robots.txt
 - [x] Replace og:image (logo) with a real project photo for social sharing (painting & pergolas still use logo until real photos are added)
 - [ ] Verify Google Business Profile NAP matches site (Name, Address, Phone)
 - [ ] (Optional) City-specific landing pages for top service areas
