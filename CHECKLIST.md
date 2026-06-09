@@ -2,7 +2,7 @@
 
 ## High Priority
 - [x] Wire up contact form to actually send submissions (Web3Forms)
-- [ ] Compress large images (IMG_2700.jpg ~3.2MB, IMG_2000.png ~2.9MB, logos ~500-800KB)
+- [x] Compress large images (Images folder reduced from ~11MB to ~2.2MB total)
 - [ ] Confirm/update contact email (currently info@redhammergroup.com — placeholder?)
 - [ ] Add favicon from logo
 
