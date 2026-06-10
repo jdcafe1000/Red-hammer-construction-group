@@ -15,7 +15,7 @@
 
 ## Trust & Conversion
 - [ ] Add testimonials/reviews section
-- [ ] Add licensed/insured badges near contact form
+- [x] Add licensed/insured badges near contact form
 - [ ] Confirm business hours (Mon–Sat 7am–7pm — accurate?)
 
 ## Domain / Hosting

@@ -606,6 +606,31 @@ h2 em { font-style: normal; color: var(--red); }
 
 .contact-detail-text a:hover { color: var(--red); }
 
+.trust-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+  padding-top: 28px;
+  border-top: 1px solid #2a2a2a;
+}
+
+.trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #181818;
+  border: 1px solid #2e2e2e;
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--off-white);
+}
+
+.trust-badge-icon { font-size: 16px; }
+
 .contact-form { display: flex; flex-direction: column; gap: 16px; }
 
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
