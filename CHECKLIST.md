@@ -3,7 +3,7 @@
 ## High Priority
 - [x] Wire up contact form to actually send submissions (Web3Forms)
 - [x] Compress large images (Images folder reduced from ~11MB to ~2.2MB total)
-- [ ] Confirm/update contact email (currently info@redhammergroup.com — placeholder?)
+- [x] Confirm/update contact email (confirmed: info@redhammergroup.com is correct)
 - [x] Add favicon from logo
 
 ## SEO
@@ -14,9 +14,9 @@
 - [x] City-specific landing pages (14 cities: Dallas, Fort Worth, Plano, Allen, McKinney, Frisco, Arlington, DeSoto, Irving, Coppell, Garland, Denton, Southlake, Highland Village/Argyle/Flower Mound)
 
 ## Trust & Conversion
-- [ ] Add testimonials/reviews section
+- [ ] Add testimonials/reviews section (waiting on real customer reviews — do not use placeholder/fake reviews)
 - [x] Add licensed/insured badges near contact form
-- [ ] Confirm business hours (Mon–Sat 7am–7pm — accurate?)
+- [x] Confirm business hours (confirmed: Mon–Sat 7am–7pm is accurate)
 
 ## Domain / Hosting
 - [x] Purchase domain (redhammergroup.com via Cloudflare)
