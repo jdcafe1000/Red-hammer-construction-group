@@ -99,6 +99,25 @@ nav {
   transition: 0.3s;
 }
 
+/* ── LOGO BACKDROP ── */
+.logo-backdrop {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65vw;
+  max-width: 850px;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 50;
+  user-select: none;
+}
+.logo-backdrop img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ── BUTTONS ── */
 .btn-primary {
   background: var(--red);
@@ -549,7 +568,7 @@ h2 em { font-style: normal; color: var(--red); }
   font-weight: 900;
   font-size: 72px;
   line-height: 1;
-  color: #1e1e1e;
+  color: #3a3a3a;
   margin-bottom: 16px;
   display: block;
 }
@@ -564,7 +583,7 @@ h2 em { font-style: normal; color: var(--red); }
   color: var(--white);
 }
 
-.process-step p { color: #777; font-size: 14px; line-height: 1.65; }
+.process-step p { color: #aaa; font-size: 14px; line-height: 1.65; }
 
 /* ── CONTACT ── */
 #contact { background: var(--dark2); }
@@ -651,7 +670,7 @@ h2 em { font-style: normal; color: var(--red); }
 }
 
 .contact-form input::placeholder,
-.contact-form textarea::placeholder { color: #555; }
+.contact-form textarea::placeholder { color: #888; }
 
 .contact-form input:focus,
 .contact-form select:focus,
@@ -693,7 +712,7 @@ footer {
 
 .footer-brand img { height: 56px; margin-bottom: 16px; display: block; }
 
-.footer-brand p { color: #666; font-size: 14px; line-height: 1.7; max-width: 280px; }
+.footer-brand p { color: #999; font-size: 14px; line-height: 1.7; max-width: 280px; }
 
 .footer-col h4 {
   font-family: var(--display);
@@ -707,7 +726,7 @@ footer {
 
 .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
 
-.footer-col ul li a { color: #555; text-decoration: none; font-size: 14px; transition: color 0.2s; }
+.footer-col ul li a { color: #999; text-decoration: none; font-size: 14px; transition: color 0.2s; }
 .footer-col ul li a:hover { color: var(--white); }
 
 .footer-bottom {
@@ -720,7 +739,7 @@ footer {
   gap: 12px;
 }
 
-.footer-bottom p { color: #444; font-size: 13px; }
+.footer-bottom p { color: #777; font-size: 13px; }
 .footer-bottom span { color: var(--red); }
 
 /* ── SERVICE AREA STRIP ── */
