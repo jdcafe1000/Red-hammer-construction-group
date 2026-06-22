@@ -107,7 +107,7 @@ nav {
   transform: translate(-50%, -50%);
   width: 65vw;
   max-width: 850px;
-  opacity: 0.05;
+  opacity: 0.10;
   pointer-events: none;
   z-index: 50;
   user-select: none;
