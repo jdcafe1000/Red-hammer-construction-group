@@ -102,25 +102,6 @@ nav {
   transition: 0.3s;
 }
 
-/* ── LOGO BACKDROP ── */
-.logo-backdrop {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 65vw;
-  max-width: 850px;
-  opacity: 0.10;
-  pointer-events: none;
-  z-index: 0;
-  user-select: none;
-}
-.logo-backdrop img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 /* ── BUTTONS ── */
 .btn-primary {
   background: var(--red);
