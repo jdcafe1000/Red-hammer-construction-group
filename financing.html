@@ -24,13 +24,14 @@
   <link rel="stylesheet" href="styles.css" />
   <style>
     .financing-hero {
-      background: var(--dark);
+      background: var(--cream);
       padding: 120px 40px 80px;
       text-align: center;
     }
-    .financing-hero h1 { margin-bottom: 16px; }
+    .financing-hero h1 { margin-bottom: 16px; color: var(--black); }
+    .financing-hero h1 em { color: var(--red); }
     .financing-hero p {
-      color: #aaa;
+      color: #5A5248;
       font-size: 18px;
       max-width: 600px;
       margin: 0 auto 40px;
@@ -38,14 +39,15 @@
     }
 
     .financing-widget-section {
-      background: var(--dark2);
+      background: var(--stone);
       padding: 80px 40px;
       text-align: center;
     }
-    .financing-widget-section h2 { margin-bottom: 12px; }
+    .financing-widget-section h2 { margin-bottom: 12px; color: var(--black); }
+    .financing-widget-section h2 em { color: var(--red); }
     .financing-widget-section .section-label { margin-bottom: 16px; }
     .financing-widget-section > p {
-      color: #aaa;
+      color: #5A5248;
       max-width: 560px;
       margin: 0 auto 48px;
       font-size: 16px;
@@ -53,10 +55,10 @@
     }
     .acorn-widget-wrap {
       display: inline-block;
-      background: #fff;
+      background: var(--cream);
       border-radius: 10px;
       padding: 8px;
-      box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+      box-shadow: 0 8px 40px rgba(18,17,15,0.15);
     }
     .acorn-widget-wrap img {
       display: block;
@@ -65,10 +67,11 @@
     }
 
     .financing-steps {
-      background: var(--dark);
+      background: var(--cream);
       padding: 80px 40px;
     }
-    .financing-steps h2 { text-align: center; margin-bottom: 48px; }
+    .financing-steps h2 { text-align: center; margin-bottom: 48px; color: var(--black); }
+    .financing-steps h2 em { color: var(--red); }
     .financing-steps-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -77,7 +80,7 @@
       margin: 0 auto;
     }
     .financing-step {
-      background: var(--dark2);
+      background: var(--stone);
       border-radius: 8px;
       padding: 36px 28px;
       position: relative;
@@ -86,8 +89,7 @@
       font-family: var(--display);
       font-size: 64px;
       font-weight: 900;
-      color: var(--red);
-      opacity: 0.25;
+      color: #C8BFB4;
       line-height: 1;
       margin-bottom: 12px;
     }
@@ -95,32 +97,32 @@
       font-family: var(--display);
       font-size: 20px;
       font-weight: 700;
-      color: var(--white);
+      color: var(--black);
       margin-bottom: 10px;
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
-    .financing-step p { color: #aaa; font-size: 14px; line-height: 1.7; }
+    .financing-step p { color: #5A5248; font-size: 14px; line-height: 1.7; }
 
     .financing-faq {
-      background: var(--dark2);
       padding: 80px 40px;
       max-width: 800px;
       margin: 0 auto;
     }
-    .financing-faq h2 { margin-bottom: 40px; }
-    .faq-item { border-bottom: 1px solid #2a2a2a; padding: 28px 0; }
-    .faq-item:first-of-type { border-top: 1px solid #2a2a2a; }
+    .financing-faq h2 { margin-bottom: 40px; color: var(--black); }
+    .financing-faq h2 em { color: var(--red); }
+    .faq-item { border-bottom: 1px solid #C0B8AF; padding: 28px 0; }
+    .faq-item:first-of-type { border-top: 1px solid #C0B8AF; }
     .faq-item h3 {
       font-family: var(--display);
       font-size: 18px;
       font-weight: 700;
-      color: var(--white);
+      color: var(--black);
       margin-bottom: 10px;
       text-transform: uppercase;
       letter-spacing: 0.04em;
     }
-    .faq-item p { color: #aaa; font-size: 15px; line-height: 1.7; }
+    .faq-item p { color: #5A5248; font-size: 15px; line-height: 1.7; }
 
     @media (max-width: 640px) {
       .financing-hero { padding: 100px 20px 60px; }
@@ -205,7 +207,7 @@
   </section>
 
   <!-- FAQ -->
-  <div style="background: var(--dark2); padding: 80px 40px;">
+  <div style="background: var(--stone); padding: 80px 40px;">
     <div class="financing-faq" style="padding: 0;">
       <h2>Common <em>Questions</em></h2>
       <div class="faq-item">
